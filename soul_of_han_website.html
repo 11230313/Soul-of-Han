@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漢魂卡牌｜Soul of Han</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-dark:#0f0e0d;
+      --paper:#EDE4C9;
+      --gold:#C9A13A;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Noto Serif TC',serif;
+      background:var(--bg-dark);
+      color:var(--paper);
+    }
+    header{
+      position:fixed;
+      top:0;left:0;right:0;
+      height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 40px;
+      background:rgba(15,14,13,0.6);
+      backdrop-filter:blur(6px);
+      z-index:1000;
+    }
+    header .logo{
+      font-size:20px;
+      letter-spacing:2px;
+      color:var(--gold);
+    }
+    nav a{
+      margin-left:28px;
+      text-decoration:none;
+      color:var(--paper);
+      position:relative;
+    }
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-6px;
+      width:0;height:1px;
+      background:var(--gold);
+      transition:width .3s ease;
+    }
+    nav a:hover::after{width:100%}
+    section{
+      min-height:100vh;
+      padding:120px 12vw 80px;
+    }
+    .hero{
+      background:url('cover.jpg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    .hero h1{
+      font-size:48px;
+      color:var(--gold);
+      letter-spacing:4px;
+    }
+    h2{
+      color:var(--gold);
+      margin-bottom:24px;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:24px;
+    }
+    .card{
+      background:rgba(255,255,255,0.02);
+      border:1px solid rgba(201,161,58,0.25);
+      padding:16px;
+      text-align:center;
+    }
+    footer{
+      text-align:center;
+      padding:40px;
+      color:#999;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">漢魂卡牌｜Soul of Han</div>
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#about">品牌探索</a>
+    <a href="#design">美學設計</a>
+    <a href="#ai">AI 協作</a>
+    <a href="#result">成果反思</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>喚醒你的卡牌魂<br>重寫三國歷史</h1>
+</section>
+
+<section id="about">
+  <h2>關於我們｜探索品牌館</h2>
+  <p>
+    漢魂卡牌致力於將三國歷史精神轉化為可收藏、可對戰的卡牌世界。
+    以「仁義」「忠誠」「智謀」為核心，讓角色不只是圖像，而是有靈魂的歷史化身。
+  </p>
+</section>
+
+<section id="design">
+  <h2>美學設計館</h2>
+  <p>整體視覺採用水墨、宣紙肌理與古銅色系，營造沉穩、史詩、典藏感。</p>
+  <div class="gallery">
+    <div class="card">水墨人物肖像</div>
+    <div class="card">古銅金 UI 元件</div>
+    <div class="card">卷軸式版面</div>
+  </div>
+</section>
+
+<section id="ai">
+  <h2>AI 協作館</h2>
+  <p>
+    本專題透過 ChatGPT 與 AI 繪圖工具協作，完成世界觀建構、角色設定、
+    視覺風格探索與互動介面原型。
+  </p>
+</section>
+
+<section id="result">
+  <h2>成果與反思館</h2>
+  <p>
+    原本以遊戲製作為目標，因技術與時間限制轉為卡牌設計。
+    透過 AI 協作，我成功將抽象想法具體化，也重新理解「創作者」與「工具」的關係。
+  </p>
+</section>
+
+<footer>
+  © 2025 漢魂卡牌 Soul of Han｜AI × Design 專題
+</footer>
+
+</body>
+</html>
